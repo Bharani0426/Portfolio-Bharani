@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Bharani Rattinassababady</title>
+
+<!-- Liens vers les fichiers CSS et les icônes -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="fas fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="0">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="1">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="2">Expériences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="3">Compétences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="4">Projets</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="6">Contact</a></li>
+            <li class="nav-item"><button id="dark-mode-toggle" class="btn btn-outline-light">🌙 Mode Nuit</button></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Accueil -->
+<section class="banner" data-scroll-index="0">
+    <div class="banner-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <div class="banner-text">
+                        <h6 class="white">Bonjour, je suis</h6>
+                        <h2 class="white">Bharani RATTINASSABABADY</h2>
+                        <p class="banner-text white">Étudiant en BUT Informatique à l'IUT Sorbonne Paris Nord, passionné par le développement web et le management en informatique.</p>
+                        <ul>
+                            <li><a href="pdf/CV_Bharani_Stage2025.pdf" class="btn btn-primary wow fadeInUp">Télécharger mon CV</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12"><img src="images/moi.jpg" class="img-fluid wow fadeInUp"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="banner" data-scroll-index="6">
+    <div class="banner-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <div class="banner-text">
+                        <h3>💬 Contactez-moi</h3>
+                        <h2 class="white">📱 Par téléphone</h2>
+                        <h6 class="white">07.49.93.12.47</h6>
+                        <h2 class="white">📨 Par mail</h2>
+                        <h6 class="white"><a href="mailto:bharanirattina.pro@gmail.com">bharanirattina.pro@gmail.com</a></h6>
+                        <h2 class="white">🔗 Par LinkedIn</h2>
+                        <h6 class="white"><a href="https://www.linkedin.com/in/bharani-rattinassababady/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> Mon profil LinkedIn</a></h6>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12"><img src="images/moi.jpg" class="img-fluid wow fadeInUp"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2024 Bharani Rattinassababady. Tous droits réservés.</p>
+        <ul class="footer-links">
+            <li><a href="https://www.linkedin.com/in/bharani-rattinassababady/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/Bharani0426" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="mailto:bharanirattina.pro@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="js/scrollIt.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("dark-mode-toggle");
+    const body = document.body;
+
+    if (localStorage.getItem("darkMode") === "enabled") {
+        body.classList.add("dark-mode");
+        toggleButton.innerHTML = "☀️ Mode Jour";
+    }
+
+    toggleButton.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "enabled");
+            toggleButton.innerHTML = "☀️ Mode Jour";
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+            toggleButton.innerHTML = "🌙 Mode Nuit";
+        }
+    });
+});
+</script>
+
+</body>
+</html>
