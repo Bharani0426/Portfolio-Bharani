@@ -1,52 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/jpeg" href="images/moi.jpg">
 <title>Portfolio Bharani</title>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="style.css"/>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-
-<!-- Font Google -->
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-<!-- Start Navig -->
-<nav class="navbar navbar-expand-lg">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
 
-        <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0">🏠 Accueil</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="1">👤 A propos de moi</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">📝 Mes expériences</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">🎯 Mes compétences</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">🚀 Mes projets</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">💬 Contact</a> </li>
-      
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- End Navig --> 
-
-<!-------Accueil Start------->
-<section class="banner" data-scroll-index='0'>
-  <div class="banner-overlay">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-12">
+        <a class="navbar-brand" href="#" data-scroll-nav="0">
+            <img src="images/moi.jpg" alt="Logo Bharani">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"> 
+            <span class="fas fa-bars" style="color: var(--text-color);"></span> 
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto align-items-center">
+                <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="0">Accueil</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">A propos</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Parcours</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Compétences</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Projets</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">Contact</a> </li>
+                <li class="nav-item theme-switch-wrapper">
+                    <button class="theme-switch" id="theme-toggle"><i class="fas fa-moon"></i></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="banner bg-alt-1" data-scroll-index='0'>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7 col-sm-12">
           <div class="banner-text">
-            <h6 class="white">Bonjour, je suis,</h6>
-            <h2 class="white">Bharani RATTINASSABABADY</h2>
-            <p class="banner-text white">Je suis étudiant en deuxième année de BUT Informatique à l'IUT de Sorbonne Paris Nord. Passionné par l'informatique, je m'intéresse particulièrement au développement web ainsi qu'au management dans le domaine de l'informatique, des domaines dans lesquels j'aspire à approfondir mes connaissances et compétences.</p>
+            <h6>Portfolio</h6>
+            <h2>Bharani RATTINASSABABADY</h2>
+            <p>Étudiant en 3ème année de BUT Informatique à l'IUT de Sorbonne Paris Nord. Passionné par le développement web et curieux de comprendre comment fonctionnent les entreprises, je souhaite poursuivre en <strong>Master MIAGE</strong>. Mon objectif est d'allier mes compétences techniques à une vision plus stratégique et gestionnaire.</p>
             <ul>
               <li>
                 <a href="pdf/Bharani_Stage_CV.pdf" class="btn btn-primary wow fadeInUp" data-wow-delay="0.4s">
@@ -56,281 +57,344 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12"> <img src="images/moi.jpg" class="img-fluid wow fadeInUp"/> </div>
+        <div class="col-md-5 col-sm-12 text-center"> 
+            <img src="images/moi.jpg" class="img-fluid wow fadeInUp profile-photo-main"/> 
+        </div>
       </div>
     </div>
-  </div>
-  <span class="svg-wave"> <img class="svg-hero" src="images/applight-wave.svg"> </span> </section>
+</section>
 
-<!-------Accueil End-------> 
-
-<!-------A propos de moi Start------->
-<section class="faq section-padding prelative" data-scroll-index='1'>
+<section class="bg-alt-2 section-padding" data-scroll-index='1'>
   <div class="container">
+    <div class="sectioner-header text-center">
+        <h3>À propos de moi</h3>
+        <p>Qui je suis, d'où je viens et où je veux aller.</p>
+    </div>
+
+    <div class="row align-items-center mb-5">
+        <div class="col-md-12 wow fadeInUp">
+            <div class="about-card">
+                <h4>Mon approche</h4>
+                <p>J'ai découvert l'informatique par le jeu vidéo, fasciné par l'idée de créer des univers interactifs. Aujourd'hui, ce qui me plaît dans le développement, c'est de construire des outils concrets et utiles.</p>
+                <p>Mais je ne veux pas rester uniquement dans la technique : la gestion de projet et le travail d'équipe m'intéressent tout autant. C'est pourquoi je vise le Master MIAGE, pour apprendre à piloter des projets informatiques dans leur globalité.</p>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
-      <div class="col-md-12">
-        <div class="sectioner-header text-center">
-          <h3>👤 À propos de moi</h3>
-          <span class="line"></span>
-          <p>Découvrez qui je suis, mon parcours, mes passions et mes ambitions qui m’animent au quotidien ! 😊</p>
+        <div class="col-12 mb-4"><h5 class="text-center">Mes passions & atouts</h5></div>
+        
+        <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="passion-item">
+                <div class="passion-bg" style="background-image: url('https://images.unsplash.com/photo-1509563268479-0f004cf3f58b?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="passion-overlay"></div>
+                <div class="passion-content">
+                    <i class="fas fa-fist-raised"></i>
+                    <h5>Boxe</h5>
+                    <p>Discipline, persévérance et dépassement de soi.</p>
+                </div>
+            </div>
         </div>
-        <div class="section-content">
-          <div class="row">
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
-              <h4>1️⃣ Comment ai-je découvert l’informatique ?</h4>
-              <p>🎮 En tant que passionné de jeux vidéo et de films technologiques, c’est le jeu Watch Dogs qui a été une véritable révélation pour moi. Son univers de hacking et de technologie m’a captivé et m’a donné envie de comprendre comment tout cela fonctionne dans le monde réel.</p>
+
+        <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="passion-item">
+                <div class="passion-bg" style="background-image: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="passion-overlay"></div>
+                <div class="passion-content">
+                    <i class="fas fa-camera"></i>
+                    <h5>Photographie</h5>
+                    <p>Sens du détail, composition et post-traitement.</p>
+                </div>
             </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
-              <h4>2️⃣ Pourquoi ai-je choisi un bac général avec Maths et Anglais ?</h4>
-              <p>🎓 Pour me préparer à une carrière en informatique, j’ai choisi ces spécialités car elles m’offraient des bases solides en logique, en résolution de problèmes (Maths) et en communication dans un environnement globalisé (Anglais). Ce choix m’a permis d’ouvrir les portes des études supérieures en informatique.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
-              <h4>3️⃣ Pourquoi ai-je intégré le BUT Informatique à Sorbonne Paris Nord ?</h4>
-              <p>🏫 J’ai choisi cette formation parce qu’elle offre un parfait équilibre entre théorie et pratique. Elle m’a permis de découvrir différents domaines de l’informatique, de la programmation à la gestion de projets, tout en développant mes compétences techniques.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
-              <h4>4️⃣ Qu’est-ce que je préfère dans l’informatique ?</h4>
-              <p>🌐 Je préfère le développement web, car j’adore transformer des idées en projets concrets, fonctionnels et esthétiques. J’apprécie également le management dans l’IT, car il allie organisation, collaboration et leadership, des aspects essentiels pour mener à bien des projets.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
-              <h4>5️⃣ Quels sont mes projets pour l’avenir ?</h4>
-              <p>🎯 Mon objectif est d’intégrer un Master MIAGE après mon BUT Informatique. Je souhaite approfondir mes compétences en développement, en management et en gestion de projets, pour jouer un rôle clé dans la transformation digitale des entreprises.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
-              <h4>6️⃣Quelles sont mes passions en dehors de l’informatique ?</h4>
-              <p>🥊 En dehors de l’informatique, je pratique la boxe depuis 3 ans, une discipline qui m’aide à développer la persévérance et la discipline. Par ailleurs, j’adore écrire des scénarios pour des films et des séries, un moyen pour moi d’exprimer ma créativité. Si j’en ai l’opportunité, j’aimerais un jour tourner mes propres créations et partager mes histoires avec le monde. 🎬✍️</p>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="passion-item">
+                <div class="passion-bg" style="background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="passion-overlay"></div>
+                <div class="passion-content">
+                    <i class="fas fa-film"></i>
+                    <h5>Cinéma & Écriture</h5>
+                    <p>Scénarisation de courts métrages et storytelling.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="passion-item">
+                <div class="passion-bg" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="passion-overlay"></div>
+                <div class="passion-content">
+                    <i class="fas fa-gamepad"></i>
+                    <h5>Gaming</h5>
+                    <p>Stratégie, réactivité et esprit de compétition.</p>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
 </section>
 
-<!-------A propos de moi End-------> 
-
-
-<!-------Expérience Start------->
-
-<section class="about section-padding prelative" data-scroll-index='2'>
+<section class="bg-alt-1 section-padding" data-scroll-index='2'>
   <div class="container">
+    <div class="sectioner-header text-center">
+        <h3>Mon Parcours</h3>
+    </div>
+    
     <div class="row">
-      <div class="col-md-12">
-        <div class="sectioner-header text-center">
-          <h3>📝 Mes expériences</h3>
-          <span class="line"></span>
-          <p>Voici un aperçu de mes expériences professionnelles, qui m'ont permis de développer mes compétences en informatique, en commerce et en gestion.</p>
+        <div class="col-md-6">
+            <h4 class="timeline-title">Expériences Professionnelles</h4>
+            <div class="timeline">
+                <div class="timeline-item wow fadeInUp">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Administrateur Systèmes (Stage)</h5>
+                        <h6 class="text-primary">WFS (2 mois - 2024)</h6>
+                        <p>Administration des systèmes informatiques, maintenance préventive et optimisation des infrastructures. Support technique niveau 1 et 2.</p>
+                    </div>
+                </div>
+                <div class="timeline-item wow fadeInUp">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Vendeur Conseil</h5>
+                        <h6 class="text-primary">BHV (Été 2024)</h6>
+                        <p>Relation client, gestion des stocks et travail en équipe dans un environnement dynamique.</p>
+                    </div>
+                </div>
+                <div class="timeline-item wow fadeInUp">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Assistant Commercial</h5>
+                        <h6 class="text-primary">Crédit Agricole (Été 2023)</h6>
+                        <p>Support aux conseillers, gestion administrative des dossiers et accueil clientèle.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="section-content text-center">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s"> <i class="fas fa-server" aria-hidden="true"></i>
-                <h5>Stage Administrateur Systèmes  WFS (2 mois, 2024)</h5>
-                <p>Durant ce stage, j’ai eu l’opportunité de travailler sur l’administration et la gestion des systèmes informatiques, en assurant la maintenance et l’optimisation des infrastructures.</p>
-              </div>
+
+        <div class="col-md-6">
+            <h4 class="timeline-title">Formation Académique</h4>
+            <div class="timeline">
+                <div class="timeline-item wow fadeInUp">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>BUT Informatique</h5>
+                        <h6 class="text-primary">IUT Sorbonne Paris Nord (En cours)</h6>
+                        <p>Développement logiciel, administration système, bases de données et gestion de projet (Méthodes Agiles).</p>
+                    </div>
+                </div>
+                <div class="timeline-item wow fadeInUp">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Baccalauréat Général</h5>
+                        <h6 class="text-primary">Lycée Léonard de Vinci - Saint Witz</h6>
+                        <p>Spécialités : Mathématiques, SES, Anglais.<br>Mention Assez Bien.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-              <div class="icon-box wow fadeInUp" data-wow-delay="0.4s"> <i class="fa fa-user-tie" aria-hidden="true"></i>
-                <h5>Vendeur - BHV (Été 2024)</h5>
-                <p>J’ai développé mes compétences en relation client et en gestion des ventes au sein d’un environnement dynamique, en conseillant les clients et en assurant la mise en rayon des produits.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="icon-box wow fadeInUp" data-wow-delay="0.6s"> 
-                <i class="fa fa-landmark" aria-hidden="true"></i>
-            
-                <h5>Assistant Commercial - Crédit Agricole (Été 2023)</h5>
-                <p>Expérience enrichissante dans le domaine bancaire où j’ai assisté les conseillers dans la gestion des dossiers clients et participé aux opérations commerciales.</p>
-              </div>
-            </div>
-          </div>
-      </div>
+        </div>
     </div>
   </div>
 </section>
-<!-------Expérience End-------> 
 
-<!-------Mes compétences Start------->
-<section class="feature section-padding" data-scroll-index='3'>
+<section class="bg-alt-2 section-padding" data-scroll-index='3'>
   <div class="container">
+    <div class="sectioner-header text-center">
+        <h3>Compétences Techniques</h3>
+        <p>Technologies et outils maîtrisés.</p>
+    </div>
+    
     <div class="row">
-      <div class="col-md-12">
-        <div class="sectioner-header text-center">
-          <h3>🎯 Mes compétences</h3>
-          <span class="line"></span>
-          <p>Voici les compétences que j’ai pu acquérir au cours de ma formation et de mes expériences professionnelles, me permettant de développer une expertise en informatique, en développement et en gestion de systèmes.</p>
+        <div class="col-md-6 mb-4 wow fadeInUp">
+            <div class="skill-card">
+                <div class="skill-header"><i class="fas fa-code"></i> Développement & Frameworks</div>
+                <div class="skill-tags">
+                    <span>ReactJS</span><span>Angular</span><span>VueJS</span>
+                    <span>TypeScript</span><span>JavaScript</span>
+                    <span>PHP (MVC)</span><span>Java (SpringBoot)</span>
+                    <span>Python</span><span>HTML5 / CSS3</span>
+                </div>
+            </div>
         </div>
-        <div class="section-content text-center">
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
-                <div class="media-body text-right media-right-margin">
-                  <h5>Développement Web</h5>
-                  <p>Maîtrise des langages HTML, CSS, JavaScript, PHP et frameworks comme React</p>
+
+        <div class="col-md-6 mb-4 wow fadeInUp">
+            <div class="skill-card">
+                <div class="skill-header"><i class="fas fa-database"></i> Données & Backend</div>
+                <div class="skill-tags">
+                    <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span>
+                    <span>Redis</span><span>ElasticSearch</span>
+                    <span>PowerShell</span>
                 </div>
-                <div class="media-right icon-border"> <span class="fas fa-code" aria-hidden="true"></span> </div>
-              </div>
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
-                <div class="media-body text-right media-right-margin">
-                  <h5>Administration Systèmes & Réseaux</h5>
-                  <p>Gestion de serveurs, configuration réseau et utilisation de Linux</p>
-                </div>
-                <div class="media-right icon-border"> <span class="fas fa-network-wired" aria-hidden="true"></span> </div>
-              </div>
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
-                <div class="media-body text-right media-right-margin">
-                  <h5>Gestion de Bases de Données</h5>
-                  <p>Conception et manipulation de bases de données avec SQL (MySQL, PostgreSQL).</p>
-                </div>
-                <div class="media-right icon-border"> <span class="fas fa-database" aria-hidden="true"></span> </div>
-              </div>
             </div>
-            <div class="col-md-4 d-none d-md-block d-lg-block">
-              <div class="feature-mobile"> <img src="images/pmo.png" class="img-fluid wow fadeInUp"/> </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
-                <div class="media-left icon-border media-right-margin"> <span class="fas fa-headset" aria-hidden="true"></span> </div>
-                <div class="media-body text-left">
-                  <h5>Support Technique & Assistance Utilisateur</h5>
-                  <p>Résolution de problèmes techniques et accompagnement des utilisateurs, avec une expérience sur l'outil KACE pour la gestion des tickets et le support informatique.</p>
-                </div>
-              </div>
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
-                <div class="media-left icon-border media-right-margin"> <span class="fas fa-robot" aria-hidden="true"></span> </div>
-                <div class="media-body text-left">
-                  <h5>Automatisation & Scripting</h5>
-                  <p>Création de scripts en Python, Bash ou PowerShell pour automatiser des tâches informatiques.</p>
-                </div>
-              </div>
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
-                <div class="media-left icon-border media-right-margin"> <span class="fas fa-project-diagram" aria-hidden="true"></span> </div>
-                <div class="media-body text-left">
-                  <h5>Gestion de Projet Informatique </h5>
-                  <p> Expérience en gestion de projet avec les méthodologies Agile/Scrum, l'utilisation d'outils comme Trello ou Jira, ainsi que la mise en place et la gestion d'un ERP Odoo pour la gestion des ventes, de la facturation et des stocks.</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <div class="col-md-6 mb-4 wow fadeInUp">
+            <div class="skill-card">
+                <div class="skill-header"><i class="fas fa-pen-fancy"></i> Design & Création</div>
+                <div class="skill-tags">
+                    <span>Figma</span><span>Adobe Lightroom</span>
+                    <span>DaVinci Resolve</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4 wow fadeInUp">
+            <div class="skill-card">
+                <div class="skill-header"><i class="fas fa-server"></i> Environnement & DevOps</div>
+                <div class="skill-tags">
+                    <span>Docker</span><span>Git / GitLab</span>
+                    <span>Linux (Debian)</span><span>VS Code</span>
+                    <span>IntelliJ</span>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
 </section>
-<!-------Mes compétences End-------> 
 
-<!-------Mes projets Start------->
-<section class="team section-padding" data-scroll-index='4'>
+<section class="bg-alt-1 section-padding" data-scroll-index='4'>
   <div class="container">
+    <div class="sectioner-header text-center">
+        <h3>Projets Réalisés</h3>
+    </div>
     <div class="row">
-      <div class="col-md-12">
-        <div class="sectioner-header text-center">
-          <h3>🚀 Mes Projets</h3>
-          <span class="line"></span>
-          <p>Découvrez les projets que j’ai réalisés durant ma formation en BUT Informatique ! Des défis concrets, des solutions innovantes et des technologies modernes🚀🔥</p>
-        </div>
-        <div class="section-content text-center">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="project-detail wow fadeInUp" data-wow-delay="0.2s"> 
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="project-detail wow fadeInUp"> 
+                <a href="https://expo.dev/accounts/bharani95/projects/SAE-Developpement-avance/builds/e09cae87-7444-44c6-9107-2330f4ada4aa" target="_blank">
+                    <div class="project-wrapper">
+                        <img src="images/dexia.jpg" class="img-fluid project-image"/>
+                        <div class="project-overlay">
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">MongoDB</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="project-info"><h4>Dexia App (2026)</h4><p>Application mobile de recommandation de films.</p></div>
+            </div>
+        </div>            
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="project-detail wow fadeInUp"> 
                 <a href="https://github.com/LiOlivier/SAE-S3.01" target="_blank">
-                  <img src="images/gestion.png" class="img-fluid project-image"/>
+                    <div class="project-wrapper">
+                        <img src="images/gestion.png" class="img-fluid project-image"/>
+                        <div class="project-overlay">
+                            <span class="tech-badge">PHP</span><span class="tech-badge">MySQL</span>
+                        </div>
+                    </div>
                 </a>
-                <div class="project-info">
-                  <h4>🌐 Gestion des stages - 2025</h4>
-                  <p>J’ai développé un site web en PHP permettant de centraliser et gérer toutes les données de stage des étudiants de tous les BUT de l’IUT. Cette plateforme facilite la gestion, le suivi et la recherche des stages, offrant un gain de temps et une meilleure organisation pour les étudiants et l’administration. 💻📊</p>
-                </div>
-              </div>
+                <div class="project-info"><h4>Gestion des Stages (2025)</h4><p>Portail de centralisation et suivi des stages.</p></div>
             </div>
-            <div class="col-md-4">
-              <div class="project-detail wow fadeInUp" data-wow-delay="0.4s"> 
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="project-detail wow fadeInUp"> 
                 <a href="https://gitlab.sorbonne-paris-nord.fr/12202121/paqueta-perform-vision" target="_blank">
-                  <img src="images/perf.png" class="img-fluid project-image"/>
+                    <div class="project-wrapper">
+                        <img src="images/perf.png" class="img-fluid project-image"/>
+                        <div class="project-overlay">
+                            <span class="tech-badge">Java</span><span class="tech-badge">UML</span>
+                        </div>
+                    </div>
                 </a>
-                <div class="project-info">
-                  <h4>🌐 Etudiants et Formateurs - 2024</h4>
-                  <p>Avec mon équipe, nous avons développé un site web pour un client visant à aider les étudiants en informatique à trouver des formateurs spécialisés en Java, UML et d'autres matières techniques. Cette plateforme met en relation les étudiants avec des experts pour les accompagner et renforcer leurs compétences. 💻🎯</p>
-                </div>
-              </div>
+                <div class="project-info"><h4>Mentorat IT (2024)</h4><p>Plateforme de mise en relation étudiants/experts.</p></div>
             </div>
-            <div class="col-md-4">
-              <div class="project-detail wow fadeInUp" data-wow-delay="0.6s"> 
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="project-detail wow fadeInUp"> 
                 <a href="https://gitlab.sorbonne-paris-nord.fr/12202121/audit-s4" target="_blank">
-                  <img src="images/projet3.jpg" class="img-fluid project-image"/>
+                    <div class="project-wrapper">
+                        <img src="images/projet3.jpg" class="img-fluid project-image"/>
+                        <div class="project-overlay">
+                            <span class="tech-badge">SEO</span><span class="tech-badge">Sécurité</span>
+                        </div>
+                    </div>
                 </a>
-                <div class="project-info">
-                  <h4>🔍 Audit d'un Site web - 2024</h4>
-                  <p>J’ai réalisé un audit complet du site web des formateurs afin d’évaluer son ergonomie, sa performance et sa sécurité. L’analyse a permis d’identifier des axes d’amélioration et d’optimiser l’expérience utilisateur ainsi que l’efficacité de la plateforme.</p>
-                </div>
-              </div>
+                <div class="project-info"><h4>Audit Web (2024)</h4><p>Analyse de performance, SEO et sécurité.</p></div>
             </div>
-            <div class="col-md-4">
-              <div class="project-detail wow fadeInUp" data-wow-delay="0.6s"> 
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="project-detail wow fadeInUp"> 
                 <a href="https://github.com/Bharani0426/SAE_BUT_INFO/blob/main/Semestre%201/S1.03%20Installation%20d'un%20poste%20pour%20le%20d%C3%A9veloppement/SAE%20103.pdf" target="_blank">
-                  <img src="images/projet4.png" class="img-fluid project-image"/>
+                    <div class="project-wrapper">
+                        <img src="images/projet4.png" class="img-fluid project-image"/>
+                        <div class="project-overlay">
+                            <span class="tech-badge">Debian</span><span class="tech-badge">Bash</span>
+                        </div>
+                    </div>
                 </a>
-                <div class="project-info">
-                  <h4>🖥️📡 Installation et Configuration d’un Poste de Développement sous Debian - 2022</h4>
-                  <p>Le projet " Installation d'un poste de développement " consiste à installer et configurer un environnement de développement sur un système Debian GNU/Linux. Il inclut la gestion des partitions de disque, l’installation et la configuration de services tels qu’Apache, PHP, PostgreSQL, ainsi que l’administration des utilisateurs et des processus via des commandes système.</p>
-                </div>
-              </div>
+                <div class="project-info"><h4>Environnement Linux (2023)</h4><p>Configuration avancée de poste de développement.</p></div>
             </div>
-            <div class="col-md-4">
-              <div class="project-detail wow fadeInUp" data-wow-delay="0.6s"> 
-                <a href="https://github.com/Bharani0426/SAE_BUT_INFO/tree/main/Semestre%201/S1.05%20Reccueil%20de%20besoins" target="_blank">
-                  <img src="images/projet5.png" class="img-fluid project-image"/>
-                </a>
-                <div class="project-info">
-                  <h4>🍽️🎵💻 Création d’un Site Web pour le Restaurant Blue Note - 2022</h4>
-                  <p>Le projet consiste en la création d’un site web en HTML et CSS pour le restaurant Blue Note. Ce site présente l’établissement, son menu, ses services et ses coordonnées à travers une interface attrayante et intuitive. Il est conçu pour être responsive, afin d’offrir une expérience utilisateur optimale sur tous types d’appareils. L’objectif est d’améliorer la visibilité du restaurant en ligne et de faciliter l’accès aux informations essentielles pour les clients.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
         </div>
-      </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="project-detail wow fadeInUp"> 
+                <a href="https://bharani0426.github.io/Restaurant-Blue-Note/" target="_blank">
+                    <div class="project-wrapper">
+                        <img src="images/projet5.png" class="img-fluid project-image"/>
+                        <div class="project-overlay">
+                            <span class="tech-badge">HTML/CSS</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="project-info"><h4>Restaurant Blue Note (2022)</h4><p>Site vitrine responsive.</p></div>
+            </div>
+        </div>
     </div>
   </div>
 </section>
 
-<!-------Mes projets End-------> 
-
-<!-------Contact Start------->
-<section class="banner" data-scroll-index='6'>
-  <div class="banner-overlay">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-12">
-          <div class="banner-text">
-            <h3>💬 Contactez-moi</h3>    
-            
-            <h2 class="white">📱 Par téléphone</h2>
-            <h6 class="white">07.49.93.12.47</h6>
-
-            <h2 class="white">📨 Par mail</h2>
-            <h6 class="white">bharanirattina.pro@gmail.com <a href="mailto:bharanirattina.pro@gmail.com"></a></h6>  
-
-            <h2 class="white">🔗 Par LinkedIn</h2>
-            <h6 class="white">
-              <a href="https://www.linkedin.com/in/bharani-rattinassababady/" target="_blank" class="contact-link">
-                <i class="fab fa-linkedin"></i> Mon profil LinkedIn
-              </a>
-            </h6>
-            
-          </div>
+<section class="bg-alt-2 section-padding" data-scroll-index='6'>
+  <div class="container">
+    <div class="sectioner-header text-center">
+        <h3>Me Contacter</h3>
+    </div>
+    <div class="row">
+        <div class="col-md-5 wow fadeInUp">
+             <div class="contact-info-box text-center">
+                <img src="images/moi.jpg" class="rounded-circle mb-3" width="100" style="border: 3px solid var(--accent-color);">
+                <h4>Mes coordonnées</h4>
+                <div class="mt-4 text-left d-inline-block">
+                    <p><i class="fas fa-phone mr-2 text-primary"></i> 07.49.93.12.47</p>
+                    <p><i class="fas fa-envelope mr-2 text-primary"></i> bharanirattina.pro@gmail.com</p>
+                    <p><a href="https://www.linkedin.com/in/bharani-rattinassababady/" target="_blank"><i class="fab fa-linkedin mr-2 text-primary"></i> LinkedIn</a></p>
+                </div>
+             </div>
         </div>
-        <div class="col-md-4 col-sm-12"> <img src="images/moi.jpg" class="img-fluid wow fadeInUp"/> </div>
-      </div>
+        <div class="col-md-7 wow fadeInUp">
+            <div class="contact-form-box">
+                <form action="https://formsubmit.co/bharanirattina.pro@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Nouveau message Portfolio !">
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>Nom</label>
+                            <input type="text" name="nom" class="form-control" placeholder="Votre nom" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Prénom</label>
+                            <input type="text" name="prenom" class="form-control" placeholder="Votre prénom" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input type="email" name="email" class="form-control" placeholder="Votre email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label>Message</label>
+                        <textarea name="message" class="form-control" rows="5" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
   </div>
 </section>
-<!-------Contact End------->
 
-<!------- Footer Start ------->
 <footer class="footer">
   <div class="container text-center">
-    <p>&copy; 2024 Bharani Rattinassababady</p>
+    <p>&copy; 2026 Bharani Rattinassababady</p>
     <ul class="footer-links">
       <li><a href="https://www.linkedin.com/in/bharani-rattinassababady/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
       <li><a href="https://github.com/Bharani0426/SAE_BUT_INFO" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -339,79 +403,43 @@
   </div>
 </footer>
 
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
-<!-- scrollIt js --> 
 <script src="js/scrollIt.min.js"></script> 
 <script src="js/wow.min.js"></script> 
 <script>
-	wow = new WOW();
-	wow.init();
-$(document).ready(function(e) {
-
-	$('#video-icon').on('click',function(e){
-	e.preventDefault();
-	$('.video-popup').css('display','flex');
-	$('.iframe-src').slideDown();
-	});
-	$('.video-popup').on('click',function(e){
-	var $target = e.target.nodeName;
-	var video_src = $(this).find('iframe').attr('src');
-	if($target != 'IFRAME'){
-	$('.video-popup').fadeOut();
-	$('.iframe-src').slideUp();
-	$('.video-popup iframe').attr('src'," ");
-	$('.video-popup iframe').attr('src',video_src);
-	}
-	});
-
-	$('.slider').bxSlider({
-	pager: false
-	});
-});
+  wow = new WOW(); wow.init();
+  $(document).ready(function(e) { $('.slider').bxSlider({ pager: false }); });
     
-$(window).on("scroll",function () {
+  $(window).on("scroll",function () {
+    var bodyScroll = $(window).scrollTop(), navbar = $(".navbar");
+    if(bodyScroll > 50){ navbar.addClass("nav-scroll"); } else{ navbar.removeClass("nav-scroll"); }
+  });
 
-	var bodyScroll = $(window).scrollTop(),
-	navbar = $(".navbar");
-	
-	if(bodyScroll > 50){
-	$('.navbar-logo img').attr('src','images/logo-black.png');
-	navbar.addClass("nav-scroll");
+  $(window).on("load",function (){
+    $.scrollIt({ easing: 'swing', scrollTime: 900, activeClass: 'active', onPageChange: null, topOffset: -63 });
+  });
 
-}else{
-	$('.navbar-logo img').attr('src','images/logo.png');
-	navbar.removeClass("nav-scroll");
-}
+  const toggleButton = document.querySelector('#theme-toggle');
+  const body = document.body;
+  const icon = toggleButton.querySelector('i');
+  const currentTheme = localStorage.getItem('theme');
+  
+  if (currentTheme) {
+      body.setAttribute('data-theme', currentTheme);
+      if (currentTheme === 'dark') { icon.classList.replace('fa-moon', 'fa-sun'); }
+  }
 
-});
-$(window).on("load",function (){
-	var bodyScroll = $(window).scrollTop(),
-	navbar = $(".navbar");
-	
-	if(bodyScroll > 50){
-	$('.navbar-logo img').attr('src','images/logo-black.png');
-	navbar.addClass("nav-scroll");
-	}else{
-	$('.navbar-logo img').attr('src','images/logo-white.png');
-	navbar.removeClass("nav-scroll");
-	}
-
-	$.scrollIt({
-	
-	easing: 'swing',      // the easing function for animation
-	scrollTime: 900,       // how long (in ms) the animation takes
-	activeClass: 'active', // class given to the active nav element
-	onPageChange: null,    // function(pageIndex) that is called when page is changed
-	topOffset: -63
-	});
-});
-
-
-
+  toggleButton.addEventListener('click', function() {
+      if (body.getAttribute('data-theme') === 'dark') {
+          body.setAttribute('data-theme', 'light'); localStorage.setItem('theme', 'light');
+          icon.classList.replace('fa-sun', 'fa-moon');
+      } else {
+          body.setAttribute('data-theme', 'dark'); localStorage.setItem('theme', 'dark');
+          icon.classList.replace('fa-moon', 'fa-sun');
+      }
+  });
 </script>
 </body>
 </html>
